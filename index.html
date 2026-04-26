@@ -9,7 +9,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;900&family=Space+Mono&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
@@ -125,7 +125,7 @@
 
     <!-- 01 / Navigation -->
     <nav id="main-nav" class="fixed top-0 left-0 w-full z-50 transition-colors duration-300 py-4 px-6 md:px-12 flex justify-between items-center" aria-label="Main Navigation">
-        <a href="#hero" class="text-xl font-display font-bold tracking-tighter text-white hover:opacity-70 transition-opacity focus-ring-dark p-1 -m-1" aria-label="Oculum Home">OCULUM.</a>
+        <a href="#hero" class="text-xl font-sans font-black tracking-tighter text-white hover:opacity-70 transition-opacity focus-ring-dark p-1 -m-1" aria-label="Oculum Home">OCULUM.</a>
         
         <!-- Desktop Links -->
         <div class="hidden md:flex items-center space-x-8 text-sm font-mono text-gray-400">
@@ -163,12 +163,12 @@
     <main id="smooth-wrapper" class="relative z-10 w-full flex flex-col">
         
         <!-- 02 / Hero -->
-        <section id="hero" class="min-h-screen flex flex-col justify-end pb-24 px-6 md:px-12 pt-32">
+        <section id="hero" class="flex flex-col pb-24 px-6 md:px-12 pt-40 md:pt-48 relative">
             <div class="max-w-5xl">
-                <div class="hero-el opacity-0 translate-y-5 font-mono text-xs uppercase tracking-widest text-gray-400 mb-8 border-l border-gray-600 pl-4">
+                <div class="hero-el opacity-0 translate-y-5 font-mono text-xs uppercase tracking-[0.15em] text-gray-400 mb-8 border-l border-gray-600 pl-4">
                     Seattle · Render Division · 2026
                 </div>
-                <h1 class="hero-el opacity-0 translate-y-5 text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight leading-[1.05] mb-8 text-white">
+                <h1 class="hero-el opacity-0 translate-y-5 text-5xl md:text-7xl lg:text-8xl font-sans font-black tracking-tighter leading-[1.05] mb-8 text-white">
                     See the exact shape of your data.
                 </h1>
                 <p class="hero-el opacity-0 translate-y-5 text-lg md:text-2xl text-gray-300 max-w-2xl mb-12 font-light leading-relaxed">
@@ -185,7 +185,7 @@
                 </div>
             </div>
             
-            <div class="hero-el opacity-0 translate-y-5 absolute bottom-8 left-6 md:left-12 flex items-center gap-3 text-xs font-mono text-gray-400">
+            <div class="hero-el opacity-0 translate-y-5 mt-16 md:mt-24 flex items-center gap-3 text-xs font-mono text-gray-400">
                 <div class="w-1 h-8 border border-gray-600 rounded-full flex justify-center p-[1px]">
                     <div class="w-1 h-2 bg-gray-400 rounded-full animate-smooth-bounce"></div>
                 </div>
@@ -194,22 +194,22 @@
         </section>
 
         <!-- 03 / Trust Bar -->
-        <section id="trust" class="border-y border-white/10 bg-black/50 backdrop-blur-md px-6 md:px-12 py-8 scroll-reveal opacity-0 translate-y-10">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4">
-                <div class="flex flex-col pl-0 md:pl-4">
-                    <span class="font-display font-bold text-2xl text-white mb-1">14 Days</span>
+        <section id="trust" class="border-y border-white/10 py-12">
+            <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-12 md:gap-24 text-center">
+                <div class="flex flex-col">
+                    <span class="font-sans font-black tracking-tight text-2xl md:text-3xl text-white mb-1">14 Days</span>
                     <span class="text-xs font-mono text-gray-400 uppercase tracking-wider">Average Turnaround</span>
                 </div>
-                <div class="flex flex-col pl-4 md:pl-6 border-l border-white/5">
-                    <span class="font-display font-bold text-2xl text-white mb-1">99.8%</span>
+                <div class="flex flex-col">
+                    <span class="font-sans font-black tracking-tight text-2xl md:text-3xl text-white mb-1">99.8%</span>
                     <span class="text-xs font-mono text-gray-400 uppercase tracking-wider">Model Accuracy</span>
                 </div>
-                <div class="flex flex-col pl-0 md:pl-6 md:border-l border-white/5">
-                    <span class="font-display font-bold text-2xl text-white mb-1">48 Hours</span>
+                <div class="flex flex-col">
+                    <span class="font-sans font-black tracking-tight text-2xl md:text-3xl text-white mb-1">48 Hours</span>
                     <span class="text-xs font-mono text-gray-400 uppercase tracking-wider">Initial Render</span>
                 </div>
-                <div class="flex flex-col pl-4 md:pl-6 border-l border-white/5">
-                    <span class="font-display font-bold text-2xl text-white mb-1">12</span>
+                <div class="flex flex-col">
+                    <span class="font-sans font-black tracking-tight text-2xl md:text-3xl text-white mb-1">12</span>
                     <span class="text-xs font-mono text-gray-400 uppercase tracking-wider">Enterprise Clients</span>
                 </div>
             </div>
@@ -233,7 +233,7 @@
                 <!-- Card 1 -->
                 <div class="md:col-span-5 glass-panel p-8 hover-lift rounded-sm">
                     <i data-lucide="bar-chart-3" class="w-8 h-8 text-white mb-6"></i>
-                    <h3 class="text-xl font-display font-bold text-white mb-3">Volume Mapping</h3>
+                    <h3 class="text-xl font-sans font-black tracking-tight text-white mb-3">Volume Mapping</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
                         We plot usage spikes against server load. The resulting model highlights exact points of failure during high traffic events.
                     </p>
@@ -242,7 +242,7 @@
                 <!-- Card 2 -->
                 <div class="md:col-span-7 glass-panel p-8 hover-lift rounded-sm">
                     <i data-lucide="git-branch" class="w-8 h-8 text-white mb-6"></i>
-                    <h3 class="text-xl font-display font-bold text-white mb-3">Path Tracking</h3>
+                    <h3 class="text-xl font-sans font-black tracking-tight text-white mb-3">Path Tracking</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
                         We trace where physical materials stop moving across locations. You see exactly which warehouse creates the delay.
                     </p>
@@ -251,7 +251,7 @@
                 <!-- Card 3 -->
                 <div class="md:col-span-7 glass-panel p-8 hover-lift rounded-sm">
                     <i data-lucide="box" class="w-8 h-8 text-white mb-6"></i>
-                    <h3 class="text-xl font-display font-bold text-white mb-3">Density Models</h3>
+                    <h3 class="text-xl font-sans font-black tracking-tight text-white mb-3">Density Models</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
                         We assign mass to financial data. The final render locates the heaviest cost centers within your production chain.
                     </p>
@@ -260,7 +260,7 @@
                 <!-- Card 4 -->
                 <div class="md:col-span-5 glass-panel p-8 hover-lift rounded-sm">
                     <i data-lucide="history" class="w-8 h-8 text-white mb-6"></i>
-                    <h3 class="text-xl font-display font-bold text-white mb-3">Timeline Reviews</h3>
+                    <h3 class="text-xl font-sans font-black tracking-tight text-white mb-3">Timeline Reviews</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
                         We compile five years of output history into a single continuous frame. Patterns become visible immediately.
                     </p>
@@ -327,12 +327,12 @@
                 </div>
 
                 <div class="flex flex-col justify-center">
-                    <h2 class="text-3xl md:text-5xl font-display font-bold text-white mb-12 leading-tight">Measured Outcomes</h2>
+                    <h2 class="text-3xl md:text-5xl font-sans font-black tracking-tight text-white mb-12 leading-tight">Measured Outcomes</h2>
                     
                     <div class="space-y-8">
                         <div class="border-b border-white/10 pb-6">
                             <div class="flex items-baseline justify-between mb-2">
-                                <span class="text-4xl font-display font-bold text-white">$1.2M</span>
+                                <span class="text-4xl font-sans font-black tracking-tight text-white">$1.2M</span>
                                 <span class="font-mono text-sm tracking-widest text-gray-400 uppercase">Average Savings</span>
                             </div>
                             <p class="text-sm text-gray-400 font-light">Identified inefficiency costs reduced in year one.</p>
@@ -340,7 +340,7 @@
                         
                         <div class="border-b border-white/10 pb-6">
                             <div class="flex items-baseline justify-between mb-2">
-                                <span class="text-4xl font-display font-bold text-white">100x</span>
+                                <span class="text-4xl font-sans font-black tracking-tight text-white">100x</span>
                                 <span class="font-mono text-sm tracking-widest text-gray-400 uppercase">Speed to insight</span>
                             </div>
                             <p class="text-sm text-gray-400 font-light">Time spent analyzing visuals versus tabular datasets.</p>
@@ -360,37 +360,37 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 px-1">
                 <div class="relative group overflow-hidden aspect-[4/5] bg-gray-900">
-                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="Server Data Map" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" loading="lazy" crossorigin="anonymous">
+                    <img src="https://dl.dropboxusercontent.com/scl/fi/rmxv4k7jdpo5ztweqz6y9/Server-Heat-Distribution.png?rlkey=6440gqr0slg4sjmu6x90o12q4&st=fzdvfhp2" alt="Server Data Map" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                         <span class="font-mono text-white text-sm">Server Heat Distribution</span>
                     </div>
                 </div>
                 <div class="relative group overflow-hidden aspect-[4/5] bg-gray-900">
-                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800" alt="Supply Line Render" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" loading="lazy" crossorigin="anonymous">
+                    <img src="https://dl.dropboxusercontent.com/scl/fi/nsmhu48klr4zo4rdyb1dp/SupplyLineTopography.png?rlkey=ymwu59tucflvjpsq2n6ku9ns8&st=ks3e7zg7" alt="Supply Line Render" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                         <span class="font-mono text-white text-sm">Supply Line Topography</span>
                     </div>
                 </div>
                 <div class="relative group overflow-hidden aspect-[4/5] bg-gray-900">
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" alt="Financial Density Map" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" loading="lazy" crossorigin="anonymous">
+                    <img src="https://dl.dropboxusercontent.com/scl/fi/epiz2zznc0u13m7bp9173/Hardware-Point-Mapping.png?rlkey=n5ltfpgiqf8mkt9kgqmh611l5&st=cl4zvwpw" alt="Financial Density Map" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                         <span class="font-mono text-white text-sm">Hardware Point Mapping</span>
                     </div>
                 </div>
                 <div class="relative group overflow-hidden aspect-[4/5] bg-gray-900">
-                    <img src="https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?auto=format&fit=crop&q=80&w=800" alt="Traffic Volume" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" loading="lazy" crossorigin="anonymous">
+                    <img src="https://dl.dropboxusercontent.com/scl/fi/82sywj7l0az3pnxes4x3f/Global-Traffic-Volume.png?rlkey=fce50rzobjvszu1ko6u0phy35&st=yctps2px" alt="Traffic Volume" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                         <span class="font-mono text-white text-sm">Global Traffic Volume</span>
                     </div>
                 </div>
                 <div class="relative group overflow-hidden aspect-[4/5] bg-gray-900">
-                    <img src="https://images.unsplash.com/photo-1506443432602-ac2fcd6f54e0?auto=format&fit=crop&q=80&w=800" alt="Network Clusters" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" loading="lazy" crossorigin="anonymous">
+                    <img src="https://dl.dropboxusercontent.com/scl/fi/7yywswzmi27hk7d3919ts/Isolated-Network-Clusters.png?rlkey=xxo4a3tk7w6w34q4111ghqvlc&st=b5jux9tn" alt="Network Clusters" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                         <span class="font-mono text-white text-sm">Isolated Network Clusters</span>
                     </div>
                 </div>
                 <div class="relative group overflow-hidden aspect-[4/5] bg-gray-900">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800" alt="Latency Render" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" loading="lazy" crossorigin="anonymous">
+                    <img src="https://dl.dropboxusercontent.com/scl/fi/5motojg0k5uwo8z90vws3/Latency-Stress-Points.png?rlkey=pexsh6pvpfrsnz6mq9m4gf1lq&st=0drz9t0i" alt="Latency Render" class="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
                         <span class="font-mono text-white text-sm">Latency Stress Points</span>
                     </div>
@@ -463,7 +463,7 @@
                 
                 <!-- CTA Copy -->
                 <div class="flex flex-col justify-center">
-                    <h2 class="text-4xl md:text-6xl font-display font-bold tracking-tight mb-6">Get the model.<br>Fix the line.</h2>
+                    <h2 class="text-4xl md:text-6xl font-sans font-black tracking-tighter mb-6">Get the model.<br>Fix the line.</h2>
                     <p class="text-gray-700 text-lg md:text-xl font-light mb-12 max-w-md leading-relaxed">
                         Stop guessing where the bottleneck lives. Send the data and see the exact location this week.
                     </p>
@@ -478,7 +478,7 @@
                     
                     <div id="inquiry-success" class="absolute inset-0 bg-gray-900 text-white flex-col items-center justify-center hidden opacity-0 z-20 transition-opacity duration-300">
                         <i data-lucide="check-circle" class="w-12 h-12 mb-4 text-green-400"></i>
-                        <h3 class="text-2xl mb-2 font-display font-bold">Request Received</h3>
+                        <h3 class="text-2xl mb-2 font-sans font-black tracking-tight">Request Received</h3>
                         <p class="text-gray-400 text-sm font-light text-center px-8">We will review your parameters and respond within 2 hours with upload instructions.</p>
                         <button type="button" id="inquiry-reset" class="mt-8 font-mono text-sm text-gray-400 hover:text-white border-b border-gray-600 pb-1 transition-colors focus-ring-dark rounded-sm">Submit another</button>
                     </div>
@@ -515,7 +515,7 @@
             <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
                 
                 <div class="flex flex-col">
-                    <span class="text-2xl font-display font-bold tracking-tighter text-white mb-6">OCULUM.</span>
+                    <span class="text-2xl font-sans font-black tracking-tighter text-white mb-6">OCULUM.</span>
                     <span class="text-gray-400 text-sm font-light max-w-xs">
                         Translating numerical density into explorable physical space.
                     </span>
